@@ -20,7 +20,7 @@
 
       <div class="govuk-form-group">
       <label class="govuk-label" for="contact-name">
-        Claimant's full name
+        <b>Claimant's full name</b>
       </label>
       <input class="govuk-input" id="contact-name" name="contact-name">
       </div>
@@ -58,7 +58,7 @@
               <div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="conditional-acas-conditional-2">
                 <div class="govuk-form-group">
                   <label class="govuk-label" for="acas-reason">
-                  Tell us why you disagree
+                  Tell us what you disagree with and why
                   </label>
                   <input class="govuk-input" id="acas-reason" name="acas-reason" type="no">
                 </div>
@@ -69,13 +69,10 @@
 
 
 
-
-
-
         <div class="govuk-form-group">
           <label class="govuk-label" for="employment-dates">
             <b>Are the dates of employment correct?</b>
-            <div class="govuk-radios govuk-radios--inline">
+            <div class="govuk-radios govuk-radios--conditional">
               <div class="govuk-radios__item">
                 <input class="govuk-radios__input" id="employment-dates" name="employment-dates" type="radio" value="yes">
                 <label class="govuk-label govuk-radios__label" for="employment-dates">
@@ -94,7 +91,7 @@
             <div class="govuk-form-group">
               <label class="govuk-label" for="continue-employment">
                 <b>Is their employment continuing?</b>(optional)
-                <div class="govuk-radios govuk-radios--inline">
+                <div class="govuk-radios govuk-radios--conditional">
                   <div class="govuk-radios__item">
                     <input class="govuk-radios__input" id="continue-employment" name="continue-employment" type="radio" value="yes">
                     <label class="govuk-label govuk-radios__label" for="continue-employment">
@@ -114,7 +111,7 @@
                 <fieldset class="govuk-fieldset" aria-describedby="how-contacted-conditional-hint">
                   <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
                     <label class="govuk-label" for="job">
-                      <b>Is their job title or job description correct?</b> (optional)
+                      <b>Is their job title or description correct?</b> (optional)
                     </label>
                   </legend>
 
@@ -142,7 +139,7 @@
                     <div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="conditional-job-conditional-2">
                       <div class="govuk-form-group">
                         <label class="govuk-label" for="job-reason">
-                        Tell us why you disagree
+                        Tell us the details you believe to be correct
                         </label>
                         <input class="govuk-input" id="job-reason" name="job-reason" type="no">
                       </div>
