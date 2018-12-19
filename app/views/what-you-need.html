@@ -1,0 +1,81 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  What you need
+{% endblock %}
+
+{% block beforeContent %}
+  <a class="govuk-back-link" href="/url/of/previous/page">Back</a>
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <h1 class="govuk-heading-xl">What you need</h1>
+
+      <form class="form" action="/case" method="post">
+
+        <p>If you're away from your screen for longer than 1 hour, you'll need to start again. </p>
+
+        <p>Before you continue, make sure you have:</p>
+
+        <ul class="govuk-list govuk-list--bullet">
+          <li>your case number - it's on the documents we sent you</li>
+          <li>details of early conciliation, including the Acas certificate number</li>
+          <li>your representative's details, if you have one</li>
+        </ul>
+        <p>You'll also need the claimant's:</p>
+
+        <ul class="govuk-list govuk-list--bullet">
+          <li>employment start and end dates </li>
+          <li>working hours and notice period</li>
+          <li>pay and benefits, before and after tax </li>
+        </ul>
+
+        <div class="govuk-inset-text">
+        <p>You can upload 1 document with your full response. Make sure you have this ready and saved as a rich text file (.rtf).</p>
+        </div>
+
+
+   <button href="/respondent" role="button" class="govuk-button">I have these details</button>
+
+
+   <div class="app-c-print-link">
+       <a href="#" class="app-c-print-link__link" rel="alternate">
+           Print page
+       </a>
+   </div>
+
+
+ </form>
+
+ </div>
+<!--
+ <div class="govuk-grid-column-one-third">
+
+ <aside class="app-related-items" role="complementary">
+   <h2 class="govuk-heading-m" id="subsection-title">
+     Help
+   </h2>
+   <nav role="navigation" aria-labelledby="subsection-title">
+     <ul class="govuk-list govuk-!-font-size-16">
+       <li>
+         <a href="#">
+           How to make a response
+         </a>
+       </li>
+       <li>
+         <a href="#" class="govuk-!-font-weight-bold">
+           More <span class="govuk-visually-hidden">in Subsection</span>
+         </a>
+       </li>
+     </ul>
+   </nav>
+ </aside>
+
+ </div>
+ </div> -->
+
+ {% endblock %}

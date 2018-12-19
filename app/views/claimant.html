@@ -1,0 +1,185 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Claimant's details
+{% endblock %}
+
+{% block beforeContent %}
+  <a class="govuk-back-link" href="/url/of/previous/page">Back</a>
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <form class="form" action="/earnings" method="post">
+
+      <h1 class="govuk-heading-xl">Claimant's details</h1>
+
+      <p>You need to check the details provided by the claimant. You'll find these in the documents we sent you.</p>
+
+      <div class="govuk-form-group">
+      <label class="govuk-label" for="contact-name">
+        Claimant's full name
+      </label>
+      <input class="govuk-input" id="contact-name" name="contact-name">
+      </div>
+
+
+        <div class="govuk-form-group">
+          <fieldset class="govuk-fieldset" aria-describedby="how-contacted-conditional-hint">
+            <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
+              <label class="govuk-label" for="acas">
+                <b>Do you agree with the details about early conciliation with Acas?</b> (optional)
+              </label>
+            </legend>
+
+            <div class="govuk-radios govuk-radios--conditional" data-module="radios">
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="acas-conditional-1" name="acas" type="radio" value="yes" data-aria-controls="conditional-acas-1">
+                <label class="govuk-label govuk-radios__label" for="acas-conditional-1">
+                  Yes
+                </label>
+              </div>
+              <div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="conditional-acas-conditional-1">
+                <div class="govuk-form-group">
+                  <!-- <label class="govuk-label" for="contact-by-email">
+                  </label>
+                  <input class="govuk-input govuk-!-width-one-third" id="contact-by-email" name="contact-by-email" type="email"> -->
+                </div>
+
+              </div>
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="acas-conditional-2" name="acas" type="radio" value="no" data-aria-controls="conditional-acas-conditional-2">
+                <label class="govuk-label govuk-radios__label" for="acas-conditional-2">
+                  No
+                </label>
+              </div>
+              <div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="conditional-acas-conditional-2">
+                <div class="govuk-form-group">
+                  <label class="govuk-label" for="acas-reason">
+                  Tell us why you disagree
+                  </label>
+                  <input class="govuk-input" id="acas-reason" name="acas-reason" type="no">
+                </div>
+              </div>
+            </div>
+          </fieldset>
+        </div>
+
+
+
+
+
+
+        <div class="govuk-form-group">
+          <label class="govuk-label" for="employment-dates">
+            <b>Are the dates of employment correct?</b>
+            <div class="govuk-radios govuk-radios--inline">
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="employment-dates" name="employment-dates" type="radio" value="yes">
+                <label class="govuk-label govuk-radios__label" for="employment-dates">
+                  Yes
+                </label>
+              </div>
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="employment-dates" name="employment-dates" type="radio" value="no">
+                <label class="govuk-label govuk-radios__label" for="employment-dates">
+                  No
+                </label>
+              </div>
+            </div>
+          </div>
+
+            <div class="govuk-form-group">
+              <label class="govuk-label" for="continue-employment">
+                <b>Is their employment continuing?</b>(optional)
+                <div class="govuk-radios govuk-radios--inline">
+                  <div class="govuk-radios__item">
+                    <input class="govuk-radios__input" id="continue-employment" name="continue-employment" type="radio" value="yes">
+                    <label class="govuk-label govuk-radios__label" for="continue-employment">
+                      Yes
+                    </label>
+                  </div>
+                  <div class="govuk-radios__item">
+                    <input class="govuk-radios__input" id="continue-employment" name="continue-employment" type="radio" value="no">
+                    <label class="govuk-label govuk-radios__label" for="continue-employment">
+                      No
+                    </label>
+                  </div>
+                </div>
+              </div>
+
+              <div class="govuk-form-group">
+                <fieldset class="govuk-fieldset" aria-describedby="how-contacted-conditional-hint">
+                  <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
+                    <label class="govuk-label" for="job">
+                      <b>Is their job title or job description correct?</b> (optional)
+                    </label>
+                  </legend>
+
+                  <div class="govuk-radios govuk-radios--conditional" data-module="radios">
+                    <div class="govuk-radios__item">
+                      <input class="govuk-radios__input" id="job-conditional-1" name="job" type="radio" value="yes" data-aria-controls="conditional-job-1">
+                      <label class="govuk-label govuk-radios__label" for="job-conditional-1">
+                        Yes
+                      </label>
+                    </div>
+                    <div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="conditional-job-conditional-1">
+                      <div class="govuk-form-group">
+                        <!-- <label class="govuk-label" for="contact-by-email">
+                        </label>
+                        <input class="govuk-input govuk-!-width-one-third" id="contact-by-email" name="contact-by-email" type="email"> -->
+                      </div>
+
+                    </div>
+                    <div class="govuk-radios__item">
+                      <input class="govuk-radios__input" id="job-conditional-2" name="job" type="radio" value="no" data-aria-controls="conditional-job-conditional-2">
+                      <label class="govuk-label govuk-radios__label" for="job-conditional-2">
+                        No
+                      </label>
+                    </div>
+                    <div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="conditional-job-conditional-2">
+                      <div class="govuk-form-group">
+                        <label class="govuk-label" for="job-reason">
+                        Tell us why you disagree
+                        </label>
+                        <input class="govuk-input" id="job-reason" name="job-reason" type="no">
+                      </div>
+                    </div>
+                  </div>
+                </fieldset>
+              </div>
+
+        <button class="govuk-button">Save and continue</button>
+
+      </form>
+
+    </div>
+
+    <!-- <div class="govuk-grid-column-one-third">
+
+      <aside class="app-related-items" role="complementary">
+        <h2 class="govuk-heading-m" id="subsection-title">
+          Help
+        </h2>
+        <nav role="navigation" aria-labelledby="subsection-title">
+          <ul class="govuk-list govuk-!-font-size-16">
+            <li>
+              <a href="#">
+                How to make a response
+              </a>
+            </li>
+            <li>
+              <a href="#" class="govuk-!-font-weight-bold">
+                More <span class="govuk-visually-hidden">in Subsection</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </aside>
+
+    </div> -->
+  </div>
+
+{% endblock %}

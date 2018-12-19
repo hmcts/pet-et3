@@ -1,0 +1,70 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Do you have a representative?
+{% endblock %}
+
+{% block beforeContent %}
+  <a class="govuk-back-link" href="/url/of/previous/page">Back</a>
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <h1 class="govuk-heading-xl">Do you have a representative?</h1>
+
+      <form class="form" action="/contact-details" method="post">
+
+        <p class="govuk-hint">A repesentative is someone who has agreed to act for you, for example a solicitor or union member.</p>
+
+        <div class="govuk-radios govuk-radios--inline">
+          <div class="govuk-radios__item">
+            <input class="govuk-radios__input" id="rep" name="rep" type="radio" value="yes">
+            <label class="govuk-label govuk-radios__label" for="rep">
+              Yes
+            </label>
+          </div>
+          <div class="govuk-radios__item">
+            <input class="govuk-radios__input" id="rep" name="rep" type="radio" value="no">
+            <label class="govuk-label govuk-radios__label" for="rep">
+              No
+            </label>
+          </div>
+          </div>
+          <br></br>
+
+
+
+        <button class="govuk-button">Save and continue</button>
+
+      </form>
+
+    </div>
+
+    <!-- <div class="govuk-grid-column-one-third">
+
+      <aside class="app-related-items" role="complementary">
+        <h2 class="govuk-heading-m" id="subsection-title">
+          Help
+        </h2>
+        <nav role="navigation" aria-labelledby="subsection-title">
+          <ul class="govuk-list govuk-!-font-size-16">
+            <li>
+              <a href="#">
+                How to make a response
+              </a>
+            </li>
+            <li>
+              <a href="#" class="govuk-!-font-weight-bold">
+                More <span class="govuk-visually-hidden">in Subsection</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </aside>
+    </div> -->
+  </div>
+
+{% endblock %}

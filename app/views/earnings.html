@@ -1,0 +1,130 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Claimant's earnings and benefits
+{% endblock %}
+
+{% block beforeContent %}
+  <a class="govuk-back-link" href="/url/of/previous/page">Back</a>
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <h1 class="govuk-heading-xl">Claimant's earnings and benefits</h1>
+      <form class="form" action="/defend" method="post">
+
+        <p>You'll find these details in the documents we sent you.</p>
+
+        <div class="govuk-form-group">
+          <label class="govuk-label" for="hours">
+            <b>Are the hours of work correct?</b> (optional)
+            <div class="govuk-radios govuk-radios--inline">
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="hours" name="hours" type="radio" value="yes">
+                <label class="govuk-label govuk-radios__label" for="hours">
+                  Yes
+                </label>
+              </div>
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="hours" name="hours" type="radio" value="no">
+                <label class="govuk-label govuk-radios__label" for="hours">
+                  No
+                </label>
+              </div>
+              </div>
+              </div>
+
+
+              <div class="govuk-form-group">
+                <label class="govuk-label" for="earnings">
+                  <b>Are the earnings correct?</b> (optional)
+                  <div class="govuk-radios govuk-radios--inline">
+                    <div class="govuk-radios__item">
+                      <input class="govuk-radios__input" id="earnings" name="earnings" type="radio" value="yes">
+                      <label class="govuk-label govuk-radios__label" for="earnings">
+                        Yes
+                      </label>
+                    </div>
+                    <div class="govuk-radios__item">
+                      <input class="govuk-radios__input" id="earnings" name="earnings" type="radio" value="no">
+                      <label class="govuk-label govuk-radios__label" for="earnings">
+                        No
+                      </label>
+                    </div>
+                </div>
+              </div>
+
+        <div class="govuk-form-group">
+          <label class="govuk-label" for="notice">
+            <b>Are the details about being paid for or working a period of notice correct?</b> (optional)
+            <div class="govuk-radios govuk-radios--inline">
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="notice" name="notice" type="radio" value="yes">
+                <label class="govuk-label govuk-radios__label" for="notice">
+                  Yes
+                </label>
+              </div>
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="notice" name="notice" type="radio" value="no">
+                <label class="govuk-label govuk-radios__label" for="notice">
+                  No
+                </label>
+              </div>
+            </div>
+          </div>
+
+            <div class="govuk-form-group">
+              <label class="govuk-label" for="benefits">
+                <b>Are the details about pensions and other benefits correct?</b> (optional)
+                <span class="govuk-caption-m">For example a company car or medical insurance.</span>
+                <div class="govuk-radios govuk-radios--inline">
+                  <div class="govuk-radios__item">
+                    <input class="govuk-radios__input" id="benefits" name="benefits" type="radio" value="yes">
+                    <label class="govuk-label govuk-radios__label" for="benefits">
+                      Yes
+                    </label>
+                  </div>
+                  <div class="govuk-radios__item">
+                    <input class="govuk-radios__input" id="benefits" name="benefits" type="radio" value="no">
+                    <label class="govuk-label govuk-radios__label" for="benefits">
+                      No
+                    </label>
+                  </div>
+                </div>
+              </div>
+
+        <button class="govuk-button">Save and continue</button>
+
+      </form>
+
+    </div>
+
+    <!-- <div class="govuk-grid-column-one-third">
+
+      <aside class="app-related-items" role="complementary">
+        <h2 class="govuk-heading-m" id="subsection-title">
+          Help
+        </h2>
+        <nav role="navigation" aria-labelledby="subsection-title">
+          <ul class="govuk-list govuk-!-font-size-16">
+            <li>
+              <a href="#">
+                How to make a response
+              </a>
+            </li>
+            <li>
+              <a href="#" class="govuk-!-font-weight-bold">
+                More <span class="govuk-visually-hidden">in Subsection</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </aside>
+
+    </div> -->
+  </div>
+
+{% endblock %}

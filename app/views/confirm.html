@@ -1,0 +1,52 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Response submitted
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-width-container">
+  <main class="govuk-main-wrapper govuk-main-wrapper--l" id="main-content" role="main">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+        <div class="govuk-panel govuk-panel--confirmation">
+          <h1 class="govuk-panel__title">
+            Response submitted
+          </h1>
+          <div class="govuk-panel__body">
+            Your reference
+            <br><strong>142000123300</strong><br>
+          </div>
+        </div>
+
+        <p class="govuk-body">We've sent a copy of the response to email@address.com. You can also <a href="#">download a pdf</a>.</p>
+        <!-- <p class="govuk-body">{You can <a href="#">download a pdf</a>.}</p> -->
+
+        <h3 class="govuk-heading-m">What happens next</h3>
+
+        <p>Bristol Civil and Family Justice Centre will [confirm receipt or ask for more information].
+          If you don't hear anything within [X] days, <a href="https://www.gov.uk/guidance/employment-tribunal-offices-and-venues">contact them</a>. Remember to include your reference.</p>
+
+        <!-- <div class="govuk-inset-text">
+        <p>You need to include your reference when you contact the court.</p>
+        </div> -->
+          <p>If you have questions about the tribunals process, contact the <a href="https://www.gov.uk/guidance/employment-tribunal-offices-and-venues">customer contact centre</a>.<p>
+
+          <!-- <h3 class="govuk-heading-m">Your feedback</h3> -->
+
+          <!-- <h3 class="govuk-heading-m">Your feedback</h3> -->
+
+          <p>We'd like your feedback on this service so we can improve it.</p>
+
+            <button class="govuk-button">Give feedback</button>
+
+
+
+        </p>
+      </div>
+    </div>
+  </main>
+</div>
+
+{% endblock %}

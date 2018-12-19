@@ -1,0 +1,82 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Start page example
+{% endblock %}
+
+{% block header %}
+  <!-- Blank header with no service name for the start page -->
+  {{ govukHeader() }}
+{% endblock %}
+
+{% block beforeContent %}
+  <div class="govuk-breadcrumbs">
+    <ol class="govuk-breadcrumbs__list">
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="https://www.gov.uk">Home</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="#">Crime, justice and law</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link">Courts, sentencing and tribunals</a>
+      </li>
+    </ol>
+  </div>
+{% endblock %}
+
+{% block content %}
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <h1 class="govuk-heading-xl">
+        Respond to a claim to an employment tribunal
+      </h1>
+
+      <p>Use this service if a claim has been made against you and early conciliation has not worked.
+
+      <p>Tribunals are separate from the government. Before making a decision, they will look at all the details provided by you and the claimant.</p>
+
+      <p>This service is for employment tribunals in England, Scotland or Wales.</p>
+
+      <a href="/what-you-need" role="button" class="govuk-button govuk-button--start govuk-!-margin-top-2 govuk-!-margin-bottom-8">Start now</a>
+
+      <p>This service is available in <a href="#">Welsh (Cymraeg)</a>.</p>
+
+      <p>If you can't do this online, you can <a href="#">use a paper form</a>.</p>
+
+    </div>
+
+    <div class="govuk-grid-column-one-third">
+
+      <aside class="app-related-items" role="complementary">
+        <h2 class="govuk-heading-m" id="subsection-title">
+          Related content
+        </h2>
+        <nav role="navigation" aria-labelledby="subsection-title">
+          <ul class="govuk-list govuk-!-font-size-16">
+
+            <li>
+              <a href="https://www.gov.uk/being-taken-to-employment-tribunal-by-employee">
+                Being taken to an employment tribunal
+              </a>
+            </li>
+
+            <li>
+              <a href="#">
+                How to make a response
+              </a>
+            </li>
+            <li>
+
+              <a href="#" class="govuk-!-font-weight-bold">
+                More <span class="govuk-visually-hidden">in Subsection</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </aside>
+
+    </div>
+  </div>
+{% endblock %}
