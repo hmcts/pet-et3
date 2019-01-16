@@ -13,15 +13,24 @@
   <div class="govuk-grid-row">
     <div class="govuk-grid-column-two-thirds">
 
-      <h1 class="govuk-heading-l">Representative's details</h1>
+      <h1 class="govuk-heading-l">Your representative's details</h1>
       <form class="form" action="/disability" method="post">
+
+
+        <p>We'll contact your representative instead of you.</p>
 
       <div class="govuk-form-group">
       <label class="govuk-label" for="organisation">
-        Company or organisation
+        <b>Company or organisation</b>
       </label>
-      <p class="govuk-hint">Leave this blank if they don't have one.</p>
       <input class="govuk-input" id="organisation" name="organisation">
+      </div>
+
+      <div class="govuk-form-group">
+      <label class="govuk-label" for="organisation">
+        <b>Representative's full name</b>
+      </label>
+      <input class="govuk-input" id="rep-name" name="rep-name">
       </div>
 
       <!-- <div class="govuk-form-group">
@@ -30,6 +39,8 @@
       </label>
       <input class="govuk-input" id="contact-name" name="contact-name">
       </div> -->
+
+      <h3 class="govuk-heading-m">Address</h3>
 
       <div class="govuk-form-group">
       <label class="govuk-label" for="address-line-1">
@@ -52,12 +63,12 @@
       <input class="govuk-input" id="address-line-3" name="address-line-3">
       </div>
 
-      <div class="govuk-form-group">
+      <!-- <div class="govuk-form-group">
       <label class="govuk-label" for="address-line-4">
       County (optional)
       </label>
       <input class="govuk-input" id="address-line-4" name="address-line-4">
-      </div>
+      </div> -->
 
       <div class="govuk-form-group">
          <label class="govuk-label" for="address-postcode">
@@ -68,14 +79,14 @@
 
        <div class="govuk-form-group">
        <label class="govuk-label" for="contact-number">
-       Phone number (optional)
+       <b>Phone number</b>
        </label>
        <input class="govuk-input" id="contact-number" name="contact-number">
        </div>
 
        <div class="govuk-form-group">
        <label class="govuk-label" for="contact-number">
-       Email (optional)
+       <b>Email</b> (optional)
        </label>
        <span class="govuk-hint">We'll send a copy of the response to this email.</span>
        <input class="govuk-input" id="contact-number" name="contact-number">
@@ -91,7 +102,7 @@
 
        <div class="govuk-form-group">
        <label class="govuk-label" for="address-line-1">
-       Document Exchange or DX number (optional)
+       <b>Document Exchange or DX number </b>(optional)
        </label>
        <span class="govuk-hint">This is a special postal code often give to a solicitor's office.</span>
        <input class="govuk-input" id="document-exchange" name="document-exchange">
@@ -100,8 +111,10 @@
 
        <div class="govuk-form-group">
        <label class="govuk-label" for="address-line-1">
-       Reference (optional)
+       <b>Their reference </b>(optional)
        </label>
+       <span class="govuk-hint">We'll use this when we contact your representative.</span>
+
        <input class="govuk-input" id="reference" name="reference">
        </div>
 

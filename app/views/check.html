@@ -1,7 +1,7 @@
 {% extends "layout.html" %}
 
 {% block pageTitle %}
-  Check your response
+  Check your answers
 {% endblock %}
 
 {% block beforeContent %}
@@ -16,10 +16,13 @@
 
       <form class="form" action="/confirm" method="post">
 
-      <h1 class="govuk-heading-l">Check your response</h1>
+      <h1 class="govuk-heading-l">Check your answers</h1>
 
+      <div>
+        <p>[Use the latest <a href="https://design-system.service.gov.uk/patterns/check-answers/" >check your answers pattern</a>.]
+        </div>
+        <br><br>
 
-    <p>{Look at check your answers pattern}</p>
         <!-- <h2 class="govuk-heading-m">Email receipt</h2> -->
 <!--
         <p>Please enter your email address so that we can provide you with a receipt of your transaction.</p>
@@ -34,12 +37,9 @@
         <p>Pressing 'Submit form' at the foot of the page will send the details confirmed below for processing.</p> -->
 
 
-        <h2 class="govuk-heading-m">Respondent's details</h2>
-        <h2 class="govuk-heading-m">Claimant's details</h2>
-        <h2 class="govuk-heading-m">Earnings and benefits</h2>
 
 
-        <button class="govuk-button">Submit form</button>
+        <button class="govuk-button">Submit your response</button>
 
 
 
