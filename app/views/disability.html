@@ -1,0 +1,80 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Disability
+{% endblock %}
+
+{% block beforeContent %}
+  <a class="govuk-back-link" href="/url/of/previous/page">Back</a>
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <h1 class="govuk-heading-l">Do you need help due to a disability?</h1>
+
+      <form class="form" action="/upload" method="post">
+
+          <div class="govuk-radios govuk-radios--conditional" data-module="radios">
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="acas-conditional-1" name="acas" type="radio" value="yes" data-aria-controls="conditional-acas-1">
+              <label class="govuk-label govuk-radios__label" for="acas-conditional-1">
+                Yes
+              </label>
+            </div>
+            <div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="conditional-acas-conditional-1">
+              <div class="govuk-form-group">
+              </div>
+
+            </div>
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="acas-conditional-2" name="acas" type="radio" value="no" data-aria-controls="conditional-acas-conditional-2">
+              <label class="govuk-label govuk-radios__label" for="acas-conditional-2">
+                No
+              </label>
+            </div>
+            <div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="conditional-acas-conditional-2">
+              <div class="govuk-form-group">
+                <label class="govuk-label" for="acas-reason">
+                  Tell us what assistance you'll need with this claim, including any hearings held at tribunal premises.</p>
+                </label>
+                <input class="govuk-input" id="acas-reason" name="acas-reason" type="no">
+              </div>
+            </div>
+          </div>
+  <br><br>
+
+        <button class="govuk-button">Save and continue</button>
+
+      </form>
+
+    </div>
+
+    <!-- <div class="govuk-grid-column-one-third">
+
+      <aside class="app-related-items" role="complementary">
+        <h2 class="govuk-heading-m" id="subsection-title">
+          Help
+        </h2>
+        <nav role="navigation" aria-labelledby="subsection-title">
+          <ul class="govuk-list govuk-!-font-size-16">
+            <li>
+              <a href="#">
+                How to make a response
+              </a>
+            </li>
+            <li>
+              <a href="#" class="govuk-!-font-weight-bold">
+                More <span class="govuk-visually-hidden">in Subsection</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </aside>
+
+    </div> -->
+  </div>
+
+{% endblock %}

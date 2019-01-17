@@ -1,0 +1,73 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Check your answers
+{% endblock %}
+
+{% block beforeContent %}
+  <a class="govuk-back-link" href="/url/of/previous/page">Back</a>
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+
+      <form class="form" action="/confirm" method="post">
+
+      <h1 class="govuk-heading-l">Check your answers</h1>
+
+      <div>
+        <p>[Use the latest <a href="https://design-system.service.gov.uk/patterns/check-answers/" >check your answers pattern</a>.]
+        </div>
+        <br><br>
+
+        <!-- <h2 class="govuk-heading-m">Email receipt</h2> -->
+<!--
+        <p>Please enter your email address so that we can provide you with a receipt of your transaction.</p>
+
+        <div class="govuk-form-group">
+<label class="govuk-label" for="email">
+        Email (optional)
+        </label>
+        <input class="govuk-input" id="email" name="email">
+        </div>
+
+        <p>Pressing 'Submit form' at the foot of the page will send the details confirmed below for processing.</p> -->
+
+
+
+
+        <button class="govuk-button">Submit your response</button>
+
+
+
+    </div>
+
+    <!-- <div class="govuk-grid-column-one-third">
+
+      <aside class="app-related-items" role="complementary">
+        <h2 class="govuk-heading-m" id="subsection-title">
+          Help
+        </h2>
+        <nav role="navigation" aria-labelledby="subsection-title">
+          <ul class="govuk-list govuk-!-font-size-16">
+            <li>
+              <a href="#">
+                How to make a response
+              </a>
+            </li>
+            <li>
+              <a href="#" class="govuk-!-font-weight-bold">
+                More <span class="govuk-visually-hidden">in Subsection</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </aside>
+
+    </div> -->
+  </div>
+
+{% endblock %}

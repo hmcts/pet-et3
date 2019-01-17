@@ -1,0 +1,109 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  What type of representative do you have?
+{% endblock %}
+
+{% block beforeContent %}
+  <a class="govuk-back-link" href="/url/of/previous/page">Back</a>
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <h1 class="govuk-heading-l">What type of representative do you have?</h1>
+      <form class="form" action="/rep-details" method="post">
+
+      <div class="govuk-form-group">
+          <label class="govuk-label" for="type">
+             <!-- <b>Type of representative</b> -->
+          <div class="govuk-radios">
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="type-1" name="type" type="radio" value="Citizen's advice">
+              <label class="govuk-label govuk-radios__label" for="type-1">
+                Citizen's advice
+              </label>
+            </div>
+
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="type-2" name="type" type="radio" value="Free representation unit">
+              <label class="govuk-label govuk-radios__label" for="type-2">
+                [Free representation unit]
+              </label>
+            </div>
+
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="type-3" name="type" type="radio" value="Law centre">
+              <label class="govuk-label govuk-radios__label" for="type-3">
+                Law centre
+              </label>
+            </div>
+
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="type-4" name="type" type="radio" value="Union">
+              <label class="govuk-label govuk-radios__label" for="type-4">
+                Union
+              </label>
+            </div>
+
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="type-5" name="type" type="radio" value="Solicitor">
+              <label class="govuk-label govuk-radios__label" for="type-5">
+                Solicitor
+              </label>
+            </div>
+
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="type-6" name="type" type="radio" value="Private individual">
+              <label class="govuk-label govuk-radios__label" for="type-6">
+                Private individual
+              </label>
+            </div>
+
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="type-7" name="type" type="radio" value="Trade association">
+              <label class="govuk-label govuk-radios__label" for="type-7">
+                Trade association
+
+              </label>
+            </div>
+          </div>
+      </div>
+
+
+
+
+        <button class="govuk-button">Save and continue</button>
+
+      </form>
+
+    </div>
+
+    <!-- <div class="govuk-grid-column-one-third">
+
+      <aside class="app-related-items" role="complementary">
+        <h2 class="govuk-heading-m" id="subsection-title">
+          Help
+        </h2>
+        <nav role="navigation" aria-labelledby="subsection-title">
+          <ul class="govuk-list govuk-!-font-size-16">
+            <li>
+              <a href="#">
+                How to make a response
+              </a>
+            </li>
+            <li>
+              <a href="#" class="govuk-!-font-weight-bold">
+                More <span class="govuk-visually-hidden">in Subsection</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </aside>
+
+    </div> -->
+  </div>
+
+{% endblock %}

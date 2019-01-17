@@ -1,0 +1,186 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  What is the case number?
+{% endblock %}
+
+{% block beforeContent %}
+  <a class="govuk-back-link" href="/url/of/previous/page">Back</a>
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <h1 class="govuk-heading-l">What is the case number?</h1>
+
+      <form class="form" action="/respondent" method="post">
+
+    <div class="govuk-form-group">
+    <label class="govuk-label" for="case-number">
+
+    You'll find this on the documents we sent you.
+
+    </label>
+    <input class="govuk-input govuk-input--width-10" id="case number" name="case number">
+    </div>
+
+    <!-- <div class="govuk-form-group">
+    <label class="govuk-label" for="organisation">
+      Name of individual, company or organisation
+    </label>
+    <input class="govuk-input" id="organisation" name="organisation">
+    </div> -->
+
+    <!-- <div class="govuk-form-group">
+    <label class="govuk-label" for="contact-name">
+      Full name of contact (optional)
+    </label>
+    <input class="govuk-input" id="contact-name" name="contact-name">
+    </div> -->
+
+    <!-- <div class="govuk-form-group">
+    <label class="govuk-label" for="address-line-1">
+      Building name or number
+    </label>
+    <input class="govuk-input" id="address-line-1" name="address-line-1">
+    </div>
+
+    <div class="govuk-form-group">
+    <label class="govuk-label" for="address-line-2">
+      Street
+    </label>
+    <input class="govuk-input" id="address-line-2" name="address-line-2">
+    </div>
+
+    <div class="govuk-form-group">
+    <label class="govuk-label" for="address-line-3">
+      Town or city
+    </label>
+    <input class="govuk-input" id="address-line-3" name="address-line-3">
+    </div>
+
+    <div class="govuk-form-group">
+    <label class="govuk-label" for="address-line-4">
+    County (optional)
+    </label>
+    <input class="govuk-input" id="address-line-4" name="address-line-4">
+    </div>
+
+    <div class="govuk-form-group">
+       <label class="govuk-label" for="address-postcode">
+         Postcode
+       </label>
+       <input class="govuk-input govuk-input--width-10" id="address-postcode" name="address-postcode">
+     </div> -->
+
+     <!-- <div class="govuk-form-group">
+     <label class="govuk-label" for="address-line-1">
+     Document exchange number (optional)
+     <span class="govuk-caption-m">This is a special code often given to a solicitor's office.</span>
+     </label>
+     <input class="govuk-input" id="document-exchange" name="document-exchange">
+     </div> -->
+
+     <!-- <div class="govuk-form-group">
+     <label class="govuk-label" for="contact-number">
+     Contact number (optional)
+     </label>
+     <input class="govuk-input" id="contact-number" name="contact-number">
+     </div>
+
+     <div class="govuk-form-group">
+     <label class="govuk-label" for="mobile-number">
+     Mobile number (optional)
+     </label>
+     <span class="govuk-caption-m">If different to your primary contact number</span>
+     <input class="govuk-input" id="mobile-number" name="mobile-number">
+     </div> -->
+
+
+     <!-- <div class="govuk-form-group">
+         <label class="govuk-label" for="contact-preference">
+            <b>How would you like us to contact you?</b>
+         <div class="govuk-radios">
+           <div class="govuk-radios__item">
+             <input class="govuk-radios__input" id="contact-preference-1" name="contact-preference" type="radio" value="Email">
+             <label class="govuk-label govuk-radios__label" for="contact-preference-1">
+               Email
+             </label>
+           </div>
+           <div class="govuk-radios__item">
+             <input class="govuk-radios__input" id="contact-preference-2" name="contact-preference" type="radio" value="Post">
+             <label class="govuk-label govuk-radios__label" for="contact-preference-2">
+               Post
+             </label>
+           </div>
+           <div class="govuk-radios__item">
+             <input class="govuk-radios__input" id="contact-preference-3" name="contact-preference" type="radio" value="Fax">
+             <label class="govuk-label govuk-radios__label" for="contact-preference-3">
+               Fax
+             </label>
+           </div>
+         </div>
+     </div> -->
+
+     <!-- <div class="govuk-form-group">
+     <label class="govuk-label" for="number-of-people">
+     <b>How many people does your organisation employ in Great Britain?</b>(optional)
+     </label>
+     <span class="govuk-caption-m">For example, 10</span>
+     <input class="govuk-input govuk-input--width-10" id="number-of-people" name="number-of-people">
+     </div>
+
+     <div class="govuk-form-group">
+       <label class="govuk-label" for="sites">
+         <b>Does this organisation have more than 1 site in Great Britain?</b>
+         <div class="govuk-radios govuk-radios--inline">
+           <div class="govuk-radios__item">
+             <input class="govuk-radios__input" id="sites" name="sites" type="radio" value="yes">
+             <label class="govuk-label govuk-radios__label" for="sites">
+               Yes
+             </label>
+           </div>
+           <div class="govuk-radios__item">
+             <input class="govuk-radios__input" id="sites" name="sites" type="radio" value="no">
+             <label class="govuk-label govuk-radios__label" for="sites">
+               No
+             </label>
+           </div>
+         </div>
+     </div> -->
+
+
+        <button href="/claimant" role="button" class="govuk-button">Save and continue</button>
+
+      </form>
+
+    </div>
+
+    <!-- <div class="govuk-grid-column-one-third">
+
+      <aside class="app-related-items" role="complementary">
+        <h2 class="govuk-heading-m" id="subsection-title">
+          Help
+        </h2>
+        <nav role="navigation" aria-labelledby="subsection-title">
+          <ul class="govuk-list govuk-!-font-size-16">
+            <li>
+              <a href="#">
+                How to make a response
+              </a>
+            </li>
+            <li>
+              <a href="#" class="govuk-!-font-weight-bold">
+                More <span class="govuk-visually-hidden">in Subsection</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </aside> -->
+
+    </div>
+  </div>
+
+{% endblock %}
