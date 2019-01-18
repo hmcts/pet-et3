@@ -17,23 +17,44 @@
 
       <form class="form" action="/rep" method="post">
 
-      <!-- <p class="gov.uk-hint">If this claim is for breach of contract, you may be able to make an <a href="#">employer's contract claim</a>.</p -->
 
-        <div class="govuk-radios govuk-radios--conditional">
+        <div class="govuk-form-group">
+          <fieldset class="govuk-fieldset" aria-describedby="defend-conditional-hint">
+            <legend class="govuk-label">
+            </legend>
+
+
+        <div class="govuk-radios govuk-radios--conditional" data-module="radios">
           <div class="govuk-radios__item">
-            <input class="govuk-radios__input" id="contract-claim-1" name="contract-claim" type="radio" value="yes">
-            <label class="govuk-label govuk-radios__label" for="contract-claim-1">
+            <input class="govuk-radios__input" id="defend-conditional-1" name="defend" type="radio" value="yes" data-aria-controls="conditional-defend-conditional-1">
+            <label class="govuk-label govuk-radios__label" for="defend-conditional-1">
               Yes
             </label>
           </div>
+          <div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="conditional-defend-conditional-1">
+            <div class="govuk-form-group">
+              <label class="govuk-label" for="defend-number">
+              Tell us the details of your employer's contract claim, including important dates
+              </label>
+              <p class="govuk-hint">Enter up to 4500 characters. You can upload a document with more details before you submit your response.</p>
+
+              <input class="govuk-input" id="defend-number" name="defend-number" type="yes">
+            </div>
+          </div>
           <div class="govuk-radios__item">
-            <input class="govuk-radios__input" id="contract-claim-2" name="contract-claim" type="radio" value="no">
-            <label class="govuk-label govuk-radios__label" for="contract-claim-2">
+            <input class="govuk-radios__input" id="defend-conditional-2" name="defend" type="radio" value="no" data-aria-controls="defend-conditional-2">
+            <label class="govuk-label govuk-radios__label" for="defend-conditional-2">
               No
             </label>
           </div>
+          <div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="conditional-defend-conditional-2">
+            <div class="govuk-form-group">
+              <input class="govuk-input" id="defend-reason" name="defend-reason" type="no">
+            </div>
           </div>
-          <br></br>
+        </div>
+      </fieldset>
+    </div>
 
         <button class="govuk-button">Save and continue</button>
 
