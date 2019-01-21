@@ -15,20 +15,20 @@
 
       <h1 class="govuk-heading-l">Do you have a representative?</h1>
 
-      <form class="form" action="/contact-details" method="post">
+      <form class="form" action="/rep" method="post">
 
         <p>A repesentative is someone who has agreed to act for you, for example a solicitor or union member.</p>
 
         <div class="govuk-radios govuk-radios--conditional">
           <div class="govuk-radios__item">
-            <input class="govuk-radios__input" id="rep" name="rep" type="radio" value="yes">
-            <label class="govuk-label govuk-radios__label" for="rep">
+            <input class="govuk-radios__input" id="rep-1" name="rep" type="radio" value="yes" data-aria-controls="conditional-rep-1">
+            <label class="govuk-label govuk-radios__label" for="rep-1">
               Yes
             </label>
           </div>
           <div class="govuk-radios__item">
-            <input class="govuk-radios__input" id="rep" name="rep" type="radio" value="no">
-            <label class="govuk-label govuk-radios__label" for="rep">
+            <input class="govuk-radios__input" id="rep-2" name="rep" type="radio" value="no">
+            <label class="govuk-label govuk-radios__label" for="rep-2">
               No
             </label>
           </div>
@@ -36,8 +36,7 @@
           <br></br>
 
 
-
-        <button class="govuk-button">Save and continue</button>
+          <button class="govuk-button">Save and continue</button>
 
       </form>
 
