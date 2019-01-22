@@ -3,7 +3,7 @@ const router = express.Router()
 
 // Add your routes here - above the module.exports line
 
-router.post('/rep', function(req, res) {
+router.post('/rep-decisioner', function(req, res) {
   const { rep } = req.session.data;
 
   if (rep === 'yes') {
