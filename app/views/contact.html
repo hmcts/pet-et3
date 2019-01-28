@@ -1,0 +1,83 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Your contact details
+{% endblock %}
+
+{% block beforeContent %}
+  <a class="govuk-back-link" href="/url/of/previous/page">Back</a>
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <h1 class="govuk-heading-l">Your contact details</h1>
+
+      <form class="form" action="/disability" method="post">
+
+      <div class="govuk-form-group">
+      <label class="govuk-label" for="contact-number">
+        Phone number
+      </label>
+        <!-- <span class="govuk-caption-m">This can be an office or mobile number.</span> -->
+      <input class="govuk-input" id="contact-number" name="contact-number">
+      </div>
+
+     <!-- <div class="govuk-form-group">
+     <label class="govuk-label" for="address-line-1">
+     Document exchange number (optional)
+     </label>
+     <input class="govuk-input" id="document-exchange" name="document-exchange">
+     </div> -->
+
+     <div class="govuk-form-group">
+     <label class="govuk-label" for="reference">
+     Your reference (optional)
+     <span class="govuk-caption-m">We'll use this when we write to you.</span>
+     </label>
+     <input class="govuk-input" id="reference" name="reference">
+     </div>
+
+     <div class="govuk-form-group">
+     <label class="govuk-label" for="contact-number">
+     Email (optional)
+     </label>
+     <span class="govuk-caption-m">We'll send a copy of your response to this email.</span>
+     <input class="govuk-input" id="contact-number" name="contact-number">
+     </div>
+
+
+        <button href="/claimant" role="button" class="govuk-button">Continue</button>
+
+      </form>
+
+    </div>
+
+    <!-- <div class="govuk-grid-column-one-third">
+
+      <aside class="app-related-items" role="complementary">
+        <h2 class="govuk-heading-m" id="subsection-title">
+          Help
+        </h2>
+        <nav role="navigation" aria-labelledby="subsection-title">
+          <ul class="govuk-list govuk-!-font-size-16">
+            <li>
+              <a href="#">
+                How to make a response
+              </a>
+            </li>
+            <li>
+              <a href="#" class="govuk-!-font-weight-bold">
+                More <span class="govuk-visually-hidden">in Subsection</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </aside> -->
+
+    </div>
+  </div>
+
+{% endblock %}
