@@ -1,0 +1,81 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Disability
+{% endblock %}
+
+{% block beforeContent %}
+  <a class="govuk-back-link" href="/url/of/previous/page">Back</a>
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <h1 class="govuk-heading-l">Are the hours of work correct?</h1>
+
+      <form class="form" action="/notice" method="post">
+
+
+        <div class="govuk-form-group">
+          <fieldset class="govuk-fieldset" aria-describedby="how-contacted-conditional-hint">
+            <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
+              <label class="govuk-label" for="hours">
+                <!-- <b>Are the hours of work correct?</b> -->
+              </label>
+            </legend>
+
+            <div class="govuk-radios govuk-radios--conditional" data-module="radios">
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="hours-conditional-1" name="hours" type="radio" value="yes" data-aria-controls="conditional-hours-1">
+                <label class="govuk-label govuk-radios__label" for="acas-conditional-1">
+                  Yes
+                </label>
+              </div>
+              <div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="conditional-hours-conditional-1">
+                <div class="govuk-form-group">
+                  <!-- <label class="govuk-label" for="contact-by-email">
+                  </label>
+                  <input class="govuk-input govuk-!-width-one-third" id="contact-by-email" name="contact-by-email" type="email"> -->
+                </div>
+
+              </div>
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="hours-conditional-2" name="hours" type="radio" value="no" data-aria-controls="conditional-hours-conditional-2">
+                <label class="govuk-label govuk-radios__label" for="hours-conditional-2">
+                  No
+                </label>
+              </div>
+              <div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="conditional-hours-conditional-2">
+                <div class="govuk-form-group">
+                  <label class="govuk-label" for="hours-reason">
+                    Tell us the details you believe to be correct
+                  </label>
+                  <p class="govuk-hint">Enter hours per week, for example 39</p>
+
+                  <input class="govuk-input govuk-input--width-10" id="hours-reason" name="hours-reason" type="no">
+                </div>
+              </div>
+            </div>
+          </fieldset>
+
+
+
+
+        <div class="govuk-form-group">
+          <fieldset class="govuk-fieldset" aria-describedby="disability-conditional-hint">
+            <legend class="govuk-label">
+            </legend>
+
+            </div>
+          </div>
+
+        <button class="govuk-button">Continue</button>
+
+      </form>
+
+    </div>
+  </div>
+
+{% endblock %}
