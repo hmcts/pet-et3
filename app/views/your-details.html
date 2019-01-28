@@ -1,7 +1,7 @@
 {% extends "layout.html" %}
 
 {% block pageTitle %}
-  What is the case number?
+  Respondent's details
 {% endblock %}
 
 {% block beforeContent %}
@@ -13,22 +13,30 @@
   <div class="govuk-grid-row">
     <div class="govuk-grid-column-two-thirds">
 
-      <h1 class="govuk-heading-l">What is the case number?</h1>
+      <h1 class="govuk-heading-l">Respondent's details</h1>
 
-      <form class="form" action="/who" method="post">
+      <form class="form" action="/claimant" method="post">
+
+    <p>The respondent is the person or organistion the case is being made against.</p>
+
+    <!-- <div class="govuk-form-group">
+    <label class="govuk-label" for="case-number">
+      Case number
+    </label>
+    <input class="govuk-input" id="case number" name="case number">
+    </div> -->
 
     <div class="govuk-form-group">
-    <label class="govuk-label" for="case-number">
-
-    You'll find this on the documents we sent you.
-
+    <label class="govuk-label" for="organisation">
+      <b>Full name of the person or organisation</b>
     </label>
-    <input class="govuk-input govuk-input--width-10" id="case number" name="case number">
+    <input class="govuk-input" id="organisation" name="organisation">
     </div>
 
     <!-- <div class="govuk-form-group">
     <label class="govuk-label" for="organisation">
-      Name of individual, company or organisation
+      <b>Contact name</b>
+      <span class="govuk-caption-m">Enter a full name if the respondent is an organisation</span>
     </label>
     <input class="govuk-input" id="organisation" name="organisation">
     </div> -->
@@ -40,7 +48,9 @@
     <input class="govuk-input" id="contact-name" name="contact-name">
     </div> -->
 
-    <!-- <div class="govuk-form-group">
+    <h3 class="govuk-heading-m">Address</h3>
+
+    <div class="govuk-form-group">
     <label class="govuk-label" for="address-line-1">
       Building name or number
     </label>
@@ -61,24 +71,23 @@
     <input class="govuk-input" id="address-line-3" name="address-line-3">
     </div>
 
-    <div class="govuk-form-group">
+    <!-- <div class="govuk-form-group">
     <label class="govuk-label" for="address-line-4">
     County (optional)
     </label>
     <input class="govuk-input" id="address-line-4" name="address-line-4">
-    </div>
+    </div> -->
 
     <div class="govuk-form-group">
        <label class="govuk-label" for="address-postcode">
          Postcode
        </label>
        <input class="govuk-input govuk-input--width-10" id="address-postcode" name="address-postcode">
-     </div> -->
+     </div>
 
      <!-- <div class="govuk-form-group">
      <label class="govuk-label" for="address-line-1">
-     Document exchange number (optional)
-     <span class="govuk-caption-m">This is a special code often given to a solicitor's office.</span>
+     Document exchange (DX) number (optional)
      </label>
      <input class="govuk-input" id="document-exchange" name="document-exchange">
      </div> -->
@@ -124,32 +133,56 @@
          </div>
      </div> -->
 
-     <!-- <div class="govuk-form-group">
+     <div class="govuk-form-group">
      <label class="govuk-label" for="number-of-people">
-     <b>How many people does your organisation employ in Great Britain?</b>(optional)
+     <b>How many people do they employ in England, Scotland and Wales?</b>
      </label>
-     <span class="govuk-caption-m">For example, 10</span>
+     <span class="govuk-caption-m">Enter digits only, for example 300.</span>
      <input class="govuk-input govuk-input--width-10" id="number-of-people" name="number-of-people">
      </div>
 
      <div class="govuk-form-group">
-       <label class="govuk-label" for="sites">
-         <b>Does this organisation have more than 1 site in Great Britain?</b>
-         <div class="govuk-radios govuk-radios--inline">
+       <fieldset class="govuk-fieldset" aria-describedby="how-contacted-conditional-hint">
+         <legend class="govuk-label">
+           <label class="govuk-label" for="sites">
+             <b>Do they have more than 1 site in England, Scotland and Wales?</b>
+           </label>
+         </legend>
+
+         <div class="govuk-radios govuk-radios--conditional" data-module="radios">
            <div class="govuk-radios__item">
-             <input class="govuk-radios__input" id="sites" name="sites" type="radio" value="yes">
-             <label class="govuk-label govuk-radios__label" for="sites">
+             <input class="govuk-radios__input" id="sites-conditional-1" name="sites" type="radio" value="yes" data-aria-controls="conditional-sites-conditional-1">
+             <label class="govuk-label govuk-radios__label" for="sites-conditional-1">
                Yes
              </label>
            </div>
+           <div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="conditional-sites-conditional-1">
+             <div class="govuk-form-group">
+               <label class="govuk-label" for="sites-number">
+               How many people are employed at the place the claimant worked?
+               </label>
+               <p class="govuk-hint">Enter digits only, for example 10.</p>
+
+               <input class="govuk-input govuk-input--width-10" id="sites-number" name="sites-number" type="yes">
+             </div>
+           </div>
            <div class="govuk-radios__item">
-             <input class="govuk-radios__input" id="sites" name="sites" type="radio" value="no">
-             <label class="govuk-label govuk-radios__label" for="sites">
+             <input class="govuk-radios__input" id="sites-conditional-2" name="sites" type="radio" value="no" data-aria-controls="sites-conditional-2">
+             <label class="govuk-label govuk-radios__label" for="sites-conditional-2">
                No
              </label>
            </div>
+           <div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="conditional-sites-conditional-2">
+             <div class="govuk-form-group">
+               <input class="govuk-input" id="sites-reason" name="sites-reason" type="no">
+             </div>
+           </div>
          </div>
-     </div> -->
+       </fieldset>
+     </div>
+
+         </div>
+     </div>
 
 
         <button href="/claimant" role="button" class="govuk-button">Continue</button>
@@ -178,9 +211,9 @@
             </li>
           </ul>
         </nav>
-      </aside> -->
+      </aside>
 
-    </div>
+    </div> -->
   </div>
 
 {% endblock %}

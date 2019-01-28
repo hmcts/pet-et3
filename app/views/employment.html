@@ -1,0 +1,70 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Disability
+{% endblock %}
+
+{% block beforeContent %}
+  <a class="govuk-back-link" href="/url/of/previous/page">Back</a>
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <h1 class="govuk-heading-l">Is the claimant's employment continuing?</h1>
+
+      <form class="form" action="/earnings" method="post">
+
+            <div class="govuk-form-group">
+              <label class="govuk-label" for="continue-employment">
+                <!-- Is their employment continuing? -->
+                <div class="govuk-radios govuk-radios--conditional">
+                  <div class="govuk-radios__item">
+                    <input class="govuk-radios__input" id="continue-employment" name="continue-employment" type="radio" value="yes">
+                    <label class="govuk-label govuk-radios__label" for="continue-employment">
+                      Yes
+                    </label>
+                  </div>
+                  <div class="govuk-radios__item">
+                    <input class="govuk-radios__input" id="continue-employment" name="continue-employment" type="radio" value="no">
+                    <label class="govuk-label govuk-radios__label" for="continue-employment">
+                      No
+                    </label>
+                  </div>
+                </div>
+              </div>
+
+        <button class="govuk-button">Continue</button>
+
+      </form>
+
+    </div>
+
+    <!-- <div class="govuk-grid-column-one-third">
+
+      <aside class="app-related-items" role="complementary">
+        <h2 class="govuk-heading-m" id="subsection-title">
+          Help
+        </h2>
+        <nav role="navigation" aria-labelledby="subsection-title">
+          <ul class="govuk-list govuk-!-font-size-16">
+            <li>
+              <a href="#">
+                How to make a response
+              </a>
+            </li>
+            <li>
+              <a href="#" class="govuk-!-font-weight-bold">
+                More <span class="govuk-visually-hidden">in Subsection</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </aside>
+
+    </div> -->
+  </div>
+
+{% endblock %}

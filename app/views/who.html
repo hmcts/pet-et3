@@ -1,0 +1,69 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Do you have a representative?
+{% endblock %}
+
+{% block beforeContent %}
+  <a class="govuk-back-link" href="/url/of/previous/page">Back</a>
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <h1 class="govuk-heading-l">Are you the respondent?</h1>
+
+      <form class="form" form action="/respondent" method="post">
+
+        <p>The respondent is the person or organistion this case is being made against.</p>
+
+        <div class="govuk-radios govuk-radios--conditional">
+          <div class="govuk-radios__item">
+            <input class="govuk-radios__input" id="rep-1" name="rep" type="radio" value="yes" data-aria-controls="conditional-rep-1">
+            <label class="govuk-label govuk-radios__label" for="rep-1">
+              Yes, I'm the respondent
+            </label>
+          </div>
+          <div class="govuk-radios__item">
+            <input class="govuk-radios__input" id="rep-2" name="rep" type="radio" value="no">
+            <label class="govuk-label govuk-radios__label" for="rep-2">
+              No, I'm a representative acting on behalf of the respondent
+            </label>
+          </div>
+          </div>
+          <br></br>
+
+
+          <button class="govuk-button">Continue</button>
+
+      </form>
+
+    </div>
+
+    <!-- <div class="govuk-grid-column-one-third">
+
+      <aside class="app-related-items" role="complementary">
+        <h2 class="govuk-heading-m" id="subsection-title">
+          Help
+        </h2>
+        <nav role="navigation" aria-labelledby="subsection-title">
+          <ul class="govuk-list govuk-!-font-size-16">
+            <li>
+              <a href="#">
+                How to make a response
+              </a>
+            </li>
+            <li>
+              <a href="#" class="govuk-!-font-weight-bold">
+                More <span class="govuk-visually-hidden">in Subsection</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </aside>
+    </div> -->
+  </div>
+
+{% endblock %}
