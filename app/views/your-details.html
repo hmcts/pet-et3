@@ -13,131 +13,37 @@
   <div class="govuk-grid-row">
     <div class="govuk-grid-column-two-thirds">
 
-      <h1 class="govuk-heading-l">Respondent's details</h1>
+      <h1 class="govuk-heading-l">Your details</h1>
 
-      <form class="form" action="/claimant" method="post">
+      <form class="form" action="/defend" method="post">
 
-    <p>The respondent is the person or organistion the case is being made against.</p>
-
-    <!-- <div class="govuk-form-group">
-    <label class="govuk-label" for="case-number">
-      Case number
-    </label>
-    <input class="govuk-input" id="case number" name="case number">
-    </div> -->
 
     <div class="govuk-form-group">
-    <label class="govuk-label" for="organisation">
-      <b>Full name of the person or organisation</b>
+    <label class="govuk-label" for="first-name">
+    First name
     </label>
     <input class="govuk-input" id="organisation" name="organisation">
     </div>
 
-    <!-- <div class="govuk-form-group">
-    <label class="govuk-label" for="organisation">
-      <b>Contact name</b>
-      <span class="govuk-caption-m">Enter a full name if the respondent is an organisation</span>
+    <div class="govuk-form-group">
+    <label class="govuk-label" for="last-name">
+      Last name
     </label>
     <input class="govuk-input" id="organisation" name="organisation">
-    </div> -->
-
-    <!-- <div class="govuk-form-group">
-    <label class="govuk-label" for="contact-name">
-      Full name of contact (optional)
-    </label>
-    <input class="govuk-input" id="contact-name" name="contact-name">
-    </div> -->
-
-    <h3 class="govuk-heading-m">Address</h3>
-
-    <div class="govuk-form-group">
-    <label class="govuk-label" for="address-line-1">
-      Building name or number
-    </label>
-    <input class="govuk-input" id="address-line-1" name="address-line-1">
     </div>
 
     <div class="govuk-form-group">
-    <label class="govuk-label" for="address-line-2">
-      Street
+    <label class="govuk-label" for="organisation">
+    Company or organisation
     </label>
-    <input class="govuk-input" id="address-line-2" name="address-line-2">
+    <input class="govuk-input" id="organisation" name="organisation">
     </div>
-
-    <div class="govuk-form-group">
-    <label class="govuk-label" for="address-line-3">
-      Town or city
-    </label>
-    <input class="govuk-input" id="address-line-3" name="address-line-3">
-    </div>
-
-    <!-- <div class="govuk-form-group">
-    <label class="govuk-label" for="address-line-4">
-    County (optional)
-    </label>
-    <input class="govuk-input" id="address-line-4" name="address-line-4">
-    </div> -->
-
-    <div class="govuk-form-group">
-       <label class="govuk-label" for="address-postcode">
-         Postcode
-       </label>
-       <input class="govuk-input govuk-input--width-10" id="address-postcode" name="address-postcode">
-     </div>
-
-     <!-- <div class="govuk-form-group">
-     <label class="govuk-label" for="address-line-1">
-     Document exchange (DX) number (optional)
-     </label>
-     <input class="govuk-input" id="document-exchange" name="document-exchange">
-     </div> -->
-
-     <!-- <div class="govuk-form-group">
-     <label class="govuk-label" for="contact-number">
-     Contact number (optional)
-     </label>
-     <input class="govuk-input" id="contact-number" name="contact-number">
-     </div>
-
-     <div class="govuk-form-group">
-     <label class="govuk-label" for="mobile-number">
-     Mobile number (optional)
-     </label>
-     <span class="govuk-caption-m">If different to your primary contact number</span>
-     <input class="govuk-input" id="mobile-number" name="mobile-number">
-     </div> -->
-
-
-     <!-- <div class="govuk-form-group">
-         <label class="govuk-label" for="contact-preference">
-            <b>How would you like us to contact you?</b>
-         <div class="govuk-radios">
-           <div class="govuk-radios__item">
-             <input class="govuk-radios__input" id="contact-preference-1" name="contact-preference" type="radio" value="Email">
-             <label class="govuk-label govuk-radios__label" for="contact-preference-1">
-               Email
-             </label>
-           </div>
-           <div class="govuk-radios__item">
-             <input class="govuk-radios__input" id="contact-preference-2" name="contact-preference" type="radio" value="Post">
-             <label class="govuk-label govuk-radios__label" for="contact-preference-2">
-               Post
-             </label>
-           </div>
-           <div class="govuk-radios__item">
-             <input class="govuk-radios__input" id="contact-preference-3" name="contact-preference" type="radio" value="Fax">
-             <label class="govuk-label govuk-radios__label" for="contact-preference-3">
-               Fax
-             </label>
-           </div>
-         </div>
-     </div> -->
 
      <div class="govuk-form-group">
      <label class="govuk-label" for="number-of-people">
-     <b>How many people do they employ in England, Scotland and Wales?</b>
+     How many people do they employ in England, Scotland and Wales?
      </label>
-     <span class="govuk-caption-m">Enter digits only, for example 300.</span>
+     <!-- <span class="govuk-caption-m">Enter digits only, for example 300.</span> -->
      <input class="govuk-input govuk-input--width-10" id="number-of-people" name="number-of-people">
      </div>
 
@@ -145,7 +51,7 @@
        <fieldset class="govuk-fieldset" aria-describedby="how-contacted-conditional-hint">
          <legend class="govuk-label">
            <label class="govuk-label" for="sites">
-             <b>Do they have more than 1 site in England, Scotland and Wales?</b>
+            Do they have more than one site in England, Scotland and Wales?
            </label>
          </legend>
 
