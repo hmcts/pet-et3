@@ -1,7 +1,7 @@
 {% extends "layout.html" %}
 
 {% block pageTitle %}
-  Disability
+  Is the claimant's job title or description correct?
 {% endblock %}
 
 {% block beforeContent %}
@@ -25,7 +25,7 @@
               </label>
             </legend>
 
-            <div class="govuk-radios govuk-radios--conditional" data-module="radios">
+            <div class="govuk-radios govuk-radios--inline" data-module="radios">
               <div class="govuk-radios__item">
                 <input class="govuk-radios__input" id="job-conditional-1" name="job" type="radio" value="yes" data-aria-controls="conditional-job-1">
                 <label class="govuk-label govuk-radios__label" for="job-conditional-1">
@@ -34,9 +34,6 @@
               </div>
               <div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="conditional-job-conditional-1">
                 <div class="govuk-form-group">
-                  <!-- <label class="govuk-label" for="contact-by-email">
-                  </label>
-                  <input class="govuk-input govuk-!-width-one-third" id="contact-by-email" name="contact-by-email" type="email"> -->
                 </div>
 
               </div>
@@ -46,7 +43,8 @@
                   No
                 </label>
               </div>
-              <div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="conditional-job-conditional-2">
+
+              <div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="conditional-job-conditional-2" style="clear:both;">
                 <div class="govuk-form-group">
                   <label class="govuk-label" for="job-reason">
                   Tell us the details you believe to be correct
