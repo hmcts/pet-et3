@@ -13,10 +13,11 @@
   <div class="govuk-grid-row">
     <div class="govuk-grid-column-two-thirds">
 
-      <h1 class="govuk-heading-l">Do you need help due to a disability?</h1>
+      <h1 class="govuk-heading-l">Will you need assistance?</h1>
 
       <form class="form" action="/upload" method="post">
 
+        <p>For example, we can send letters in larger font. At the hearing, we can arrange things like an interpreter, hearing loop and disabled access.</p>
 
         <div class="govuk-form-group">
           <fieldset class="govuk-fieldset" aria-describedby="disability-conditional-hint">
@@ -27,21 +28,21 @@
               <div class="govuk-radios__item">
                 <input class="govuk-radios__input" id="disability-conditional-1" name="disability" type="radio" value="yes" data-aria-controls="conditional-disability-conditional-1">
                 <label class="govuk-label govuk-radios__label" for="disability-conditional-1">
-                  Yes
+                  Yes, I need assistance
                 </label>
               </div>
               <div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="conditional-disability-conditional-1">
                 <div class="govuk-form-group">
                   <label class="govuk-label" for="disability-number">
-                  Tell us what assistance you need with this claim, including attending any hearings held at tribunal premises.
+                  Tell us what assistance you need
                   </label>
-                  <input class="govuk-input" id="disability-number" name="disability-number" type="yes">
+                  <input class="govuk-input" style="height:50px" id="disability-number" name="disability-number" type="yes">
                 </div>
               </div>
               <div class="govuk-radios__item">
                 <input class="govuk-radios__input" id="disability-conditional-2" name="disability" type="radio" value="no" data-aria-controls="disability-conditional-2">
                 <label class="govuk-label govuk-radios__label" for="disability-conditional-2">
-                  No
+                  No, I don't need assistance
                 </label>
               </div>
               <div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="conditional-disability-conditional-2">
