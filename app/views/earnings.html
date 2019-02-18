@@ -16,195 +16,91 @@
       <h1 class="govuk-heading-l">Are the claimant's earnings correct?</h1>
       <form class="form" action="/hours" method="post">
 
-        <!-- <p>You'll find these details in the documents we sent you.</p>
-              <div class="govuk-form-group">
-                <fieldset class="govuk-fieldset" aria-describedby="how-contacted-conditional-hint">
-                  <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
-                    <label class="govuk-label" for="hours">
-                      <b>Are the hours of work correct?</b>
-                    </label> -->
-                  <!-- </legend>
 
-                  <div class="govuk-radios govuk-radios--conditional" data-module="radios">
-                    <div class="govuk-radios__item">
-                      <input class="govuk-radios__input" id="hours-conditional-1" name="hours" type="radio" value="yes" data-aria-controls="conditional-hours-1">
-                      <label class="govuk-label govuk-radios__label" for="acas-conditional-1">
-                        Yes
-                      </label>
-                    </div>
-                    <div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="conditional-hours-conditional-1">
-                      <div class="govuk-form-group">
-                        <!-- <label class="govuk-label" for="contact-by-email">
-                        </label>
-                        <input class="govuk-input govuk-!-width-one-third" id="contact-by-email" name="contact-by-email" type="email"> -->
-                      <!-- </div> -->
+        <div class="govuk-form-group">
+          <fieldset class="govuk-fieldset" aria-describedby="how-contacted-conditional-hint">
+            <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
+              <label class="govuk-label" for="earnings">
+              </label>
+            </legend>
 
-                    <!-- </div>
-                    <div class="govuk-radios__item">
-                      <input class="govuk-radios__input" id="hours-conditional-2" name="hours" type="radio" value="no" data-aria-controls="conditional-hours-conditional-2">
-                      <label class="govuk-label govuk-radios__label" for="hours-conditional-2">
-                        No
-                      </label>
-                    </div>
-                    <div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="conditional-hours-conditional-2">
-                      <div class="govuk-form-group">
-                        <label class="govuk-label" for="hours-reason">
-                          Tell us the details you believe to be correct
-                        </label>
-                        <p class="govuk-hint">Enter hours per week, for example 39</p>
-
-                        <input class="govuk-input govuk-input--width-10" id="hours-reason" name="hours-reason" type="no">
-                      </div>
-                    </div>
-                  </div>
-                </fieldset>
-              </div> -->
-
-
-              <div class="govuk-form-group">
-                <label class="govuk-label" for="earnings">
-                  <!-- <b>Are the earnings correct?</b> -->
-                  <div class="govuk-radios govuk-radios--conditional">
-                    <div class="govuk-radios__item">
-                      <input class="govuk-radios__input" id="earnings" name="earnings" type="radio" value="yes">
-                      <label class="govuk-label govuk-radios__label" for="earnings">
-                        Yes
-                      </label>
-                    </div>
-                    <div class="govuk-radios__item">
-                      <input class="govuk-radios__input" id="earnings" name="earnings" type="radio" value="no">
-                      <label class="govuk-label govuk-radios__label" for="earnings">
-                        No
-                      </label>
-                    </div>
-                </div>
-              </div>
-
-        <!-- <div class="govuk-form-group">
-          <label class="govuk-label" for="notice">
-            <b>Are the details about being paid for or working a period of notice correct?</b> (optional)
-            <div class="govuk-radios govuk-radios--inline">
+            <div class="govuk-radios govuk-radios--inline" data-module="radios">
               <div class="govuk-radios__item">
-                <input class="govuk-radios__input" id="notice" name="notice" type="radio" value="yes">
-                <label class="govuk-label govuk-radios__label" for="notice">
+                <input class="govuk-radios__input" id="earnings-conditional-1" name="earnings" type="radio" value="yes" data-aria-controls="conditional-earnings-1">
+                <label class="govuk-label govuk-radios__label" for="earnings-conditional-1">
                   Yes
                 </label>
               </div>
+              <div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="conditional-earnings-conditional-1">
+                <div class="govuk-form-group">
+                </div>
+
+              </div>
               <div class="govuk-radios__item">
-                <input class="govuk-radios__input" id="notice" name="notice" type="radio" value="no">
-                <label class="govuk-label govuk-radios__label" for="notice">
+                <input class="govuk-radios__input" id="earnings-conditional-2" name="earnings" type="radio" value="no" data-aria-controls="conditional-earnings-conditional-2">
+                <label class="govuk-label govuk-radios__label" for="earnings-conditional-2">
                   No
                 </label>
               </div>
+
+              <div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="conditional-earnings-conditional-2" style="clear:both;">
+                <div class="govuk-form-group">
+                  <label class="govuk-label" for="earnings-reason">
+                  <p>Tell us the earnings you believe to be correct<br />
+                    <span class="govuk-hint">You must include things like overtime, commission and bonuses.</span>
+                  </p>
+                  </div>
+
+                  <div style="margin-bottom:20px;">
+                    <label>
+                  <p>Pay before tax and national insurance are taken off</p>
+                  </label>
+                  <input class="govuk-input govuk-input--width-10" id="earnings-reason" name="earnings-reason" type="no">
+                </div>
+
+                <div class="govuk-radios govuk-radios--inline" data-module="radios">
+                  <div class="govuk-radios__item">
+                    <input class="govuk-radios__input" id="sites-conditional-1" name="sites" type="radio" value="yes" data-aria-controls="conditional-sites-conditional-1">
+                    <label class="govuk-label govuk-radios__label" for="sites-conditional-1">
+                      Weekly
+                    </label>
+                  </div>
+                  <div class="govuk-radios__item">
+                    <input class="govuk-radios__input" id="sites-conditional-2" name="sites" type="radio" value="no" data-aria-controls="sites-conditional-2">
+                    <label class="govuk-label govuk-radios__label" for="sites-conditional-2">
+                      Monthly
+                    </label>
+                    </div>
+
+
+                    <div style="clear:both; padding-top:15px;">
+                    <label class="govuk-label" for="earnings-reason">
+                    Take home pay (after tax and national insurance are taken off)
+                    </label>
+                    </div>
+                  </div>
+
+                  <div style="margin-bottom:30px;">
+                    <input class="govuk-input govuk-input--width-10" id="earnings-reason" name="earnings-reason" type="no">
+                  </div>
+
+                  <div class="govuk-radios govuk-radios--inline" data-module="radios">
+                    <div class="govuk-radios__item">
+                      <input class="govuk-radios__input" id="sites-conditional-1" name="sites" type="radio" value="yes" data-aria-controls="conditional-sites-conditional-1">
+                      <label class="govuk-label govuk-radios__label" for="sites-conditional-1">
+                        Weekly
+                      </label>
+                    </div>
+                    <div class="govuk-radios__item">
+                      <input class="govuk-radios__input" id="sites-conditional-2" name="sites" type="radio" value="no" data-aria-controls="sites-conditional-2">
+                      <label class="govuk-label govuk-radios__label" for="sites-conditional-2">
+                        Monthly
+                      </label>
+                  </div>
+              </div>
             </div>
-          </div> -->
-
-          <!-- <div class="govuk-form-group">
-            <fieldset class="govuk-fieldset" aria-describedby="how-contacted-conditional-hint">
-              <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
-                <label class="govuk-label" for="notice">
-                  <b>Are the details about being paid for or working a period of notice correct?</b>
-                </label>
-              </legend>
-
-              <div class="govuk-radios govuk-radios--conditional" data-module="radios">
-                <div class="govuk-radios__item">
-                  <input class="govuk-radios__input" id="notice-conditional-1" name="hours" type="radio" value="yes" data-aria-controls="conditional-notice-1">
-                  <label class="govuk-label govuk-radios__label" for="notice-conditional-1">
-                    Yes
-                  </label>
-                </div>
-                <div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="conditional-notice-conditional-1">
-                  <div class="govuk-form-group">
-                    <!-- <label class="govuk-label" for="contact-by-email">
-                    </label>
-                    <input class="govuk-input govuk-!-width-one-third" id="contact-by-email" name="contact-by-email" type="email"> -->
-                  <!-- </div>
-
-                </div>
-                <div class="govuk-radios__item">
-                  <input class="govuk-radios__input" id="notice-conditional-2" name="notice" type="radio" value="no" data-aria-controls="conditional-notice-conditional-2">
-                  <label class="govuk-label govuk-radios__label" for="notice-conditional-2">
-                    No
-                  </label>
-                </div>
-                <div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="conditional-notice-conditional-2">
-                  <div class="govuk-form-group">
-                    <label class="govuk-label" for="notice-reason">
-                      Tell us the details you believe to be correct
-                    </label>
-
-                    <input class="govuk-input govuk-input--width-10" id="hours-reason" name="hours-reason" type="no">
-                  </div>
-                </div>
-              </div>
-            </fieldset>
-          </div> -->
-
-            <!-- <div class="govuk-form-group">
-              <label class="govuk-label" for="benefits">
-                <b>Are the details about pensions and other benefits correct?</b> (optional)
-                <span class="govuk-caption-m">For example a company car or medical insurance.</span>
-                <div class="govuk-radios govuk-radios--inline">
-                  <div class="govuk-radios__item">
-                    <input class="govuk-radios__input" id="benefits" name="benefits" type="radio" value="yes">
-                    <label class="govuk-label govuk-radios__label" for="benefits">
-                      Yes
-                    </label>
-                  </div>
-                  <div class="govuk-radios__item">
-                    <input class="govuk-radios__input" id="benefits" name="benefits" type="radio" value="no">
-                    <label class="govuk-label govuk-radios__label" for="benefits">
-                      No
-                    </label>
-                  </div>
-                </div>
-              </div> -->
-
-              <!-- <div class="govuk-form-group">
-                <fieldset class="govuk-fieldset" aria-describedby="how-contacted-conditional-hint">
-                  <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
-                    <label class="govuk-label" for="benefits">
-                      <b>Are the details about pension and other benefits correct?</b>
-                      <p class="govuk-hint">For example a company car or medical insurance.</p>
-                    </label>
-                  </legend>
-
-                  <div class="govuk-radios govuk-radios--conditional" data-module="radios">
-                    <div class="govuk-radios__item">
-                      <input class="govuk-radios__input" id="benefits-conditional-1" name="benefits" type="radio" value="yes" data-aria-controls="conditional-benefits-1">
-                      <label class="govuk-label govuk-radios__label" for="benefits-conditional-1">
-                        Yes
-                      </label>
-                    </div>
-                    <div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="conditional-benefits-conditional-1">
-                      <div class="govuk-form-group"> -->
-                        <!-- <label class="govuk-label" for="contact-by-email">
-                        </label>
-                        <input class="govuk-input govuk-!-width-one-third" id="contact-by-email" name="contact-by-email" type="email"> -->
-                      <!-- </div> -->
-
-                    <!-- </div>
-                    <div class="govuk-radios__item">
-                      <input class="govuk-radios__input" id="benefits-conditional-2" name="benefits" type="radio" value="no" data-aria-controls="conditional-benefits-conditional-2">
-                      <label class="govuk-label govuk-radios__label" for="benefits-conditional-2">
-                        No
-                      </label>
-                    </div>
-                    <div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="conditional-benefits-conditional-2">
-                      <div class="govuk-form-group">
-                        <label class="govuk-label" for="benefits-reason">
-                          Tell us the details you believe to be correct
-                        </label>
-                        <p class="govuk-hint">Enter up to 350 characters. You can upload a document with more details before you submit your response.</p>
-
-                        <input class="govuk-input govuk-input--width-10" id="benefits-reason" name="benefits-reason" type="no">
-                      </div>
-                    </div>
-                  </div> -->
-                  </div>
-                </fieldset>
-              </div>
+          </fieldset>
+        </div>
 
 
         <button class="govuk-button">Continue</button>

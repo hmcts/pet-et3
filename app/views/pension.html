@@ -22,11 +22,11 @@
             <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
               <label class="govuk-label" for="benefits">
                 <!-- <b>Are the details about pension and other benefits correct?</b> -->
-                <p class="govuk-hint">For example a company car or medical insurance.</p>
+                <p>For example a company car or medical insurance.</p>
               </label>
             </legend>
 
-            <div class="govuk-radios govuk-radios--conditional" data-module="radios">
+            <div class="govuk-radios govuk-radios--inline" data-module="radios">
               <div class="govuk-radios__item">
                 <input class="govuk-radios__input" id="benefits-conditional-1" name="benefits" type="radio" value="yes" data-aria-controls="conditional-benefits-1">
                 <label class="govuk-label govuk-radios__label" for="benefits-conditional-1">
@@ -47,14 +47,14 @@
                   No
                 </label>
               </div>
-              <div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="conditional-benefits-conditional-2">
+              <div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="conditional-benefits-conditional-2" style="clear:both;">
                 <div class="govuk-form-group">
                   <label class="govuk-label" for="benefits-reason">
                     Tell us the details you believe to be correct
                   </label>
                   <p class="govuk-hint">Enter up to 350 characters. You can upload a document with more details before you submit your response.</p>
 
-                  <input class="govuk-input" id="benefits-reason" name="benefits-reason" type="no">
+                  <input class="govuk-input"  style="height:150px" id="benefits-reason" name="benefits-reason" type="no">
                 </div>
               </div>
             </div>
