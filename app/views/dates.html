@@ -19,24 +19,111 @@
 
 
         <div class="govuk-form-group">
-          <label class="govuk-label" for="employment-dates">
+          <fieldset class="govuk-fieldset" aria-describedby="how-contacted-conditional-hint">
+            <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
+              <label class="govuk-label" for="dates">
+              </label>
+            </legend>
 
-            <div class="govuk-radios govuk-radios--inline">
+            <div class="govuk-radios govuk-radios--inline" data-module="radios">
               <div class="govuk-radios__item">
-                <input class="govuk-radios__input" id="employment-dates" name="employment-dates" type="radio" value="yes">
-                <label class="govuk-label govuk-radios__label" for="employment-dates">
+                <input class="govuk-radios__input" id="dates-conditional-1" name="dates" type="radio" value="yes" data-aria-controls="conditional-dates-1">
+                <label class="govuk-label govuk-radios__label" for="dates-conditional-1">
                   Yes
                 </label>
               </div>
+              <div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="conditional-dates-conditional-1">
+                <div class="govuk-form-group">
+                </div>
+
+              </div>
               <div class="govuk-radios__item">
-                <input class="govuk-radios__input" id="employment-dates" name="employment-dates" type="radio" value="no">
-                <label class="govuk-label govuk-radios__label" for="employment-dates">
+                <input class="govuk-radios__input" id="dates-conditional-2" name="dates" type="radio" value="no" data-aria-controls="conditional-dates-conditional-2">
+                <label class="govuk-label govuk-radios__label" for="dates-conditional-2">
                   No
                 </label>
               </div>
-            </div>
-          </div>
 
+              <div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="conditional-dates-conditional-2" style="clear:both;">
+                <div class="govuk-form-group">
+  <fieldset class="govuk-fieldset" aria-describedby="start-date-hint" role="group">
+
+        <p>Employment start date</p>
+        <p class="govuk-hint">For example, 01 08 2015</p>
+
+    <div class="govuk-date-input" id="start-date">
+      <div class="govuk-date-input__item">
+        <div class="govuk-form-group">
+          <label class="govuk-label govuk-date-input__label" for="start-date">
+            Day
+          </label>
+          <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="start-date-day" name="start-date-day" type="number" pattern="[0-9]*">
+        </div>
+      </div>
+      <div class="govuk-date-input__item">
+        <div class="govuk-form-group">
+          <label class="govuk-label govuk-date-input__label" for="start-date-month">
+            Month
+          </label>
+          <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="start-date-month" name="start-date-month" type="number" pattern="[0-9]*">
+        </div>
+      </div>
+      <div class="govuk-date-input__item">
+        <div class="govuk-form-group">
+          <label class="govuk-label govuk-date-input__label" for="start-date-year">
+            Year
+          </label>
+          <input class="govuk-input govuk-date-input__input govuk-input--width-4" id="start-date-year" name="start-date-year" type="number" pattern="[0-9]*">
+        </div>
+      </div>
+    </div>
+
+    <p></p>
+
+    <p>Employment end date</p>
+    <p class="govuk-hint">For example, 05 09 2017</p>
+
+<div class="govuk-date-input" id="end-date">
+  <div class="govuk-date-input__item">
+    <div class="govuk-form-group">
+      <label class="govuk-label govuk-date-input__label" for="end-date">
+        Day
+      </label>
+      <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="end-date-day" name="end-date-day" type="number" pattern="[0-9]*">
+    </div>
+  </div>
+  <div class="govuk-date-input__item">
+    <div class="govuk-form-group">
+      <label class="govuk-label govuk-date-input__label" for="end-date-month">
+        Month
+      </label>
+      <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="end-date-month" name="end-date-month" type="number" pattern="[0-9]*">
+    </div>
+  </div>
+  <div class="govuk-date-input__item">
+    <div class="govuk-form-group">
+      <label class="govuk-label govuk-date-input__label" for="end-date-year">
+        Year
+      </label>
+      <input class="govuk-input govuk-date-input__input govuk-input--width-4" id="end-date-year" name="end-date-year" type="number" pattern="[0-9]*">
+    </div>
+  </div>
+</div>
+
+  </fieldset>
+</div>
+
+
+                <div class="govuk-form-group">
+                  <label class="govuk-label" for="dates-reason">
+                  Tell us why you disagree with the dates given by the claimant
+                  </label>
+                  <input class="govuk-input" style="height:100px" id="dates-reason" name="dates-reason" type="no">
+                </div>
+              </div>
+            </div>
+          </fieldset>
+        </div>
 
         <button class="govuk-button">Continue</button>
 
