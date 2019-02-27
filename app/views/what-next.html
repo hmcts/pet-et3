@@ -1,7 +1,7 @@
 {% extends "layout.html" %}
 
 {% block pageTitle %}
-  Claimant's details
+Check the claim details
 {% endblock %}
 
 {% block beforeContent %}
@@ -12,25 +12,15 @@
 
   <div class="govuk-grid-row">
     <div class="govuk-grid-column-two-thirds">
-      <form class="form" action="/defend" method="post">
 
-      <h1 class="govuk-heading-l">Claimant's name</h1>
+      <h1 class="govuk-heading-l">Check the claim details</h1>
 
-      <p>We need the name of the person who has made the claim against you.</p>
+      <form class="form" action="/acas" method="post">
 
-      <div class="govuk-form-group">
-      <label class="govuk-label" for="claimant-first-name">
-      First name
-      </label>
-      <input class="govuk-input govuk-input--width-20" id="claimant-first-name" name="claimant-first-name">
-      </div>
 
-      <div class="govuk-form-group">
-      <label class="govuk-label" for="claimant-last-name">
-        Last name
-      </label>
-      <input class="govuk-input govuk-input--width-20" id="claimant-last-name" name="claimant-last-name">
-      </div>
+          <p>[Blue flash page - what you'll do next and where to find the claim details]</p>
+
+<p></p>
 
 
         <button class="govuk-button">Continue</button>
