@@ -1,0 +1,90 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Is the claimant's job title or description correct?
+{% endblock %}
+
+{% block beforeContent %}
+  <a class="govuk-back-link" href="/url/of/previous/page">Back</a>
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <h1 class="govuk-heading-l">Is the claimant's job title or description correct?</h1>
+
+      <form class="form" action="/dates" method="post">
+
+        <div class="govuk-form-group">
+          <fieldset class="govuk-fieldset" aria-describedby="how-contacted-conditional-hint">
+            <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
+              <label class="govuk-label" for="job">
+              </label>
+            </legend>
+
+            <div class="govuk-radios govuk-radios--inline" data-module="radios">
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="job-conditional-1" name="job" type="radio" value="yes" data-aria-controls="conditional-job-1">
+                <label class="govuk-label govuk-radios__label" for="job-conditional-1">
+                  Yes
+                </label>
+              </div>
+              <div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="conditional-job-conditional-1">
+                <div class="govuk-form-group">
+                </div>
+
+              </div>
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="job-conditional-2" name="job" type="radio" value="no" data-aria-controls="conditional-job-conditional-2">
+                <label class="govuk-label govuk-radios__label" for="job-conditional-2">
+                  No
+                </label>
+              </div>
+
+              <div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="conditional-job-conditional-2" style="clear:both;">
+                <div class="govuk-form-group">
+                  <label class="govuk-label" for="job-reason">
+                  Tell us the details you believe to be correct
+                  </label>
+                  <textarea id="job-reason" class="govuk-textarea" name="job-reason" rows="8" cols="80"></textarea>
+                </div>
+              </div>
+            </div>
+          </fieldset>
+        </div>
+
+
+        <button class="govuk-button">Continue</button>
+
+      </form>
+
+    </div>
+
+    <!-- <div class="govuk-grid-column-one-third">
+
+      <aside class="app-related-items" role="complementary">
+        <h2 class="govuk-heading-m" id="subsection-title">
+          Help
+        </h2>
+        <nav role="navigation" aria-labelledby="subsection-title">
+          <ul class="govuk-list govuk-!-font-size-16">
+            <li>
+              <a href="#">
+                How to make a response
+              </a>
+            </li>
+            <li>
+              <a href="#" class="govuk-!-font-weight-bold">
+                More <span class="govuk-visually-hidden">in Subsection</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </aside>
+
+    </div> -->
+  </div>
+
+{% endblock %}
