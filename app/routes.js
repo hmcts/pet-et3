@@ -3,15 +3,16 @@ const router = express.Router()
 
 // Add your routes here - above the module.exports line
 
-router.post('/rep-decisioner', function(req, res) {
+router.post('/respondent-name', function(req, res) {
+  console.log("Routing rep-decisioner");
   const { rep } = req.session.data;
 
   if (rep === 'yes') {
-    res.redirect('/rep-details');
+    res.redirect('/contact');
   }
 
   if (rep === 'no') {
-    res.redirect('/contact-details');
+    res.redirect('/respondent-name');
   }
 });
 
