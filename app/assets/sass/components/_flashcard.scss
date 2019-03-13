@@ -1,0 +1,17 @@
+.flash-card {
+  margin-top: 1.25em;
+  padding: 60px;
+  background: $govuk-brand-colour;
+  color: #fff;
+
+  .govuk-heading-l, p { color: #fff; }
+
+  .govuk-button {
+    padding-right: 3.6em;
+    padding-left: 3.6em;
+    background-color: #fff;
+    position: relative;
+    color: $govuk-brand-colour;
+    font-weight: 700;
+  }
+}
